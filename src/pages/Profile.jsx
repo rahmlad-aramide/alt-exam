@@ -3,7 +3,7 @@ import { UserContext } from "../contexts";
 import Signin from "./Signin";
 
 const Profile = () => {
-  const { user, signedIn, handleSignin, handleSignout } =
+  const { user, signedIn, handleSignout } =
     useContext(UserContext);
 
   return (
@@ -36,27 +36,12 @@ const Profile = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            {/* {signedIn ? (
-              <button
-                className="bg-white text-primary my-2 mx-8 md:mx-0 w-full md:w-fit rounded-lg px-4 md:px-20 py-2 font-bold hover:scale-95 transition duration-500"
-                onClick={handleSignout}
-              >
-                SignOut
-              </button>
-            ) : (
-              <button
-                className="bg-white text-primary my-2 mx-8 md:mx-0 w-full md:w-fit rounded-lg px-4 md:px-20 py-2 font-bold hover:scale-95 transition duration-500"
-                onClick={handleSignin}
-              >
-                SignIn
-              </button>
-            )} */}
             <button
                 className="bg-white text-primary my-2 mx-8 md:mx-0 w-full md:w-fit rounded-lg px-4 md:px-20 py-2 font-bold hover:scale-95 transition duration-500"
                 onClick={handleSignout}
               >
                 SignOut
-              </button>
+            </button>
           </div>
         </div>
       )}
